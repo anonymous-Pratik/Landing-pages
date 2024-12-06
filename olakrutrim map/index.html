@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ola maps</title>
+    
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-text">It's time to <strong>#ExitGoogleMaps</strong>, Switch to Ola Maps</div>
+        <button class="banner-button">Get 1 year free access</button>
+    </div>
+
+    <!-- NAVBAR HTML FROM BELOW -->
+
+    <!-- <nav class="navbar">
+        <a href="#" class="logo"><span>OLA</span> MAPS</a>
+        <div class="nav-links">
+            <a href="#" class="active">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Pricing</a>
+            <a href="#" class="developer-dropdown">Developer</a>
+            <a href="#">Support</a>
+            <a href="#"><button  class="sign-in-btn">SIGN IN</button></a>
+        </div>
+    </nav> -->
+
+    <nav class="navbar">
+      <a href="#" class="logo"><span>OLA</span> MAPS</a>
+      <button class="menu-icon" onclick="toggleSideNav()">☰</button>
+
+      <div class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Pricing</a>
+        <a href="#" class="developer-dropdown">Developer</a>
+        <a href="#">Support</a>
+        <a href="#"><button  class="sign-in-btn">SIGN IN</button></a>
+    </div>
+  </nav>
+  
+  <div id="side-nav" class="side-nav">
+      <button class="close-btn" onclick="toggleSideNav()">×</button>
+      <a href="#" class="active">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Pricing</a>
+      <a href="#">Developer</a>
+      <a href="#">Support</a>
+      <a href="#"><button class="sign-in-btn">SIGN IN</button></a>
+  </div>
+  
+
+    <!-- HERO SECTION START FROM BELOW -->
+
+    <section class="hero-section">
+        <h1 class="hero-title">Navigating India with Precision</h1>
+        <p class="hero-description">
+            Ola Maps delivers real-time, accurate navigation, uniquely designed for 
+            India's dynamic road conditions and ever-changing environments.
+        </p>
+        <div class="cta-container">
+            <a href="#" class="btn btn-primary">Get Started now</a>
+            <a href="#" class="btn btn-secondary">Contact Sales</a>
+        </div>
+    </section>
+
+    <!-- IMAGE SEC START FROM BELOW -->
+     <div class="image">
+        <img src="mapImage.png" alt="map-image" style="width: 70%;">
+     </div>
+
+     <!-- CONTAINER SEC START FROM BELOW -->
+
+     <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">100m+</div>
+                <div class="stat-label">
+                    <span>🔹</span>
+                    Active User
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">35b+</div>
+                <div class="stat-label">
+                    <span>📊</span>
+                    API calls/month
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">10m+</div>
+                <div class="stat-label">
+                    <span>🚗</span>
+                    Vehicles connected
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">30m+</div>
+                <div class="stat-label">
+                    <span>🏢</span>
+                    Businesses & places
+                </div>
+            </div>
+        </div>
+
+        <div class="ecosystem-content">
+            <h2 class="ecosystem-title">Ecosystem Driven by<br>Data Integration and Processing</h2>
+            <p class="ecosystem-description">
+                Comprehensive navigation, routing, and geospatial APIs for seamless data 
+                integration and enhanced user experiences.
+            </p>
+            <a href="#" class="btn btn-primary">View Offerings</a>
+        </div>
+    </div>
+
+    <!-- ANOTHER CONTAINER START FROM BELOW -->
+
+    <div class="anotherContainer">
+        <div class="sdk-header">
+            <h2 class="sdk-title">SDKs for iOS, Android and Web</h2>
+            <p class="sdk-description">
+                We provide SDKs that allow developers to integrate Ola Maps into iOS and Android apps, as well 
+                as web pages, offering comprehensive solution through navigation, visualisation and search 
+                features.
+            </p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3 class="feature-title">Routing</h3>
+                <p class="feature-description">
+                    Generate optimized routes, estimate travel time, identify nearest roads and snap set of 
+                    locations to identified road networks.
+                </p>
+                <img src="add1.svg" alt="Routing example map" class="feature-image">
+            </div>
+
+            <div class="feature-card">
+                <h3 class="feature-title">Geocoding</h3>
+                <p class="feature-description">
+                    Fetch geo coordinates from addresses and human-readable place names from geo coordinates.
+                </p>
+                <img src="add2.svg" alt="Geocoding example map" class="feature-image">
+            </div>
+
+            <div class="feature-card">
+                <h3 class="feature-title">Places</h3>
+                <p class="feature-description">
+                    Find places by category or name, with autocomplete suggestions and detailed information.
+                </p>
+                <img src="add3.webp" alt="Geocoding example map" class="feature-image">
+            </div>
+
+            <div class="feature-card">
+                <h3 class="feature-title">Map Tiles
+                </h3>
+                <p class="feature-description">
+                    Render rich, dynamic and interactive maps with ease.
+
+                </p>
+                <img src="add4.webp" alt="Geocoding example map" class="feature-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- PRICING SECTION START FROM BELOW -->
+
+    <section class="pricing-section">
+        <div class="pricing-container">
+            <h2 class="pricing-title">Clear Costs, Smart Routes</h2>
+            <p class="pricing-description">
+                <span class="pricing-highlight">Enjoy 2 years of complimentary access with up to 10 million API calls for long-term commitments.</span>
+                <span class="pricing-secondary">After initial 2 years, costs will apply. Start saving today and unlock effortless navigation.</span>
+            </p>
+            <a href="#" class="btn btn-primary">View Pricing</a>
+        </div>
+    </section>
+
+    <!-- QUESTIONS SECTION IS START FROM BELOW -->
+
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+        <p>Got questions? We've already got answers. It's like we can hear you thinking.</p>
+    
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">
+              What is Ola Maps?
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            
+            <div class="accordion-content">
+              <p>Ola Maps is your ultimate navigation companion across India, designed to enhance your travel experience. It provides you with meticulously detailed maps, up-to-the-minute traffic updates, and precise turn-by-turn navigation instructions. Our goal is to make your travels as seamless and efficient as possible, utilizing cutting-edge technology to ensure each journey is smoother, faster, and more intuitive than ever before.</p>
+            </div>
+          </div>
+    
+          <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">
+              How do I get started with Ola Maps?
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>To start using Ola Maps, simply register yourself or your organization on our platform with a valid email address. After registration, you can sign in to access our API services or integrate our SDKs to create innovative applications. For more, mail us at sales@olakrutrim.com</p>
+            </div>
+          </div>
+    
+          <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">
+              How can I contact Ola Maps for inquiries or support?
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>You can reach out to our support team via the contact section in the Ola Maps app or on our website.</p>
+            </div>
+          </div>
+    
+          <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">
+              How do I report an issue or inaccuracy on the map?
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>If you notice any inaccuracies or issues with Ola Maps, please contact us at support@olakrutrim.com. We are committed to improving Ola Maps and appreciate your feedback. Additionally, we are developing a more straightforward method for reporting map issues directly through our platform.</p>
+            </div>
+          </div>
+    
+          <div class="accordion-item">
+            <button class="accordion-header" onclick="toggleAccordion(this)">
+              How does Ola Maps ensure my privacy is protected?
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>At Ola Maps, your privacy is our priority. For detailed information on how we manage and protect your data, please refer to our Privacy Policy available on our website.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <script>
+        function toggleAccordion(button) {
+    const item = button.parentElement;
+    const content = item.querySelector('.accordion-content');
+  
+    // Toggle active class
+    item.classList.toggle('active');
+  
+    // Adjust max-height
+    if (item.classList.contains('active')) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+    } else {
+      content.style.maxHeight = '0';
+    }
+  }
+    </script>
+<!-- FOOTER-FIRST START FROM HERE -->
+
+<section class="pricing-section">
+    <div class="pricing-container">
+        <h2 class="pricing-title">Navigation Excellence with Ola Maps</h2>
+        <p class="pricing-description">
+            <span class="pricing-highlight">Join us in revolutionizing the way India navigates with Ola Maps. Our platform is designed to provide accurate, real-time, and contextually relevant navigation services tailored for the dynamic Indian road conditions.
+            </span>
+        </p>
+        <a href="#" class="btn btn-primary">Get Started</a>
+    </div>
+</section>
+
+<!-- FOOTER SEC START FROM BELOW -->
+
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-text">OLA MAPS</span>
+      </div>
+      <div class="footer-links">
+        <a href="#">Get in Touch</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Fair Usage Policy</a>
+      </div>
+      <div class="footer-socials">
+        <a href="#"><img src="insta.png" alt="Instagram" style="width: 30px; background-color: white; padding: 2px; border-radius: 1px;"></a>
+        <a href="#"><img src="yt.png" alt="YouTube" style="width: 30px; background-color: white; padding: 2px; border-radius: 1px;"></a>
+        <a href="#"><img src="x.png" alt="Twitter" style="width: 30px; background-color: white; padding: 2px; border-radius: 1px;"></a>
+        <a href="#"><img src="li.png" alt="LinkedIn" style="width: 30px; background-color: white; padding: 2px; border-radius: 1px;"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Ola Maps. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script>
+    function toggleSideNav() {
+        const sideNav = document.getElementById('side-nav');
+        sideNav.classList.toggle('active');
+    }
+</script>
+</body>
+</html>
+
+            

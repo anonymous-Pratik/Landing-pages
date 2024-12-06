@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato Banner</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+    integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="banner">
+
+    <div class="top-bar">
+      <span>
+        <i class="fa-solid fa-sliders"></i>
+        <a href="#" class="app-link">Get the App</a>
+      </span>
+
+      <!-- Menu Toggle for Mobile -->
+      <div class="menu-toggle" onclick="toggleMenu()">
+        ☰ <!-- Hamburger menu icon -->
+      </div>
+
+      <nav class="nav-links">
+        <span class="close-icon" onclick="toggleMenu()">×</span>
+        <a href="#">Investor Relations</a>
+        <a href="#">Add restaurant</a>
+        <a href="#">Log in</a>
+        <a href="#">Sign up</a>
+      </nav>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active');
+      }
+    </script>
+    <div class="content">
+      <h1>zomato</h1>
+      <p>Discover the best food & drinks in Mumbai</p>
+      <div class="search-bar">
+        <div class="location">
+          <div class="cityDiv">
+            <i class="fa-solid fa-location-dot" style="color: #ff7979;" style="font-size: 20px;"></i>
+
+            <input type="text" id="city" value="Mumbai" disabled>
+            <i class="fa-solid fa-caret-down dropDown sec-icon" style="cursor:pointer"></i>
+          </div>
+
+          <div class="inputBarDiv">
+            <i class="fa-solid fa-magnifying-glass" style="color:black" style="font-size: 15px"></i>
+            <input type="text" id="inputBar" placeholder="Search for restaurant, cuisine or a dish">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- images-sec start from below -->
+
+
+  <div class="main-container">
+    <!-- Main Categories -->
+    <div class="categories">
+
+      <div class="category">
+        <img src="img1.avif" alt="Order Online">
+
+        <h3>Order Online</h3>
+        <p>Stay home and order to your doorstep</p>
+
+      </div>
+      <div class="category">
+        <img src="img2.avif" alt="Dining">
+        <h3>Dining</h3>
+        <p>View the city's favourite dining venues</p>
+      </div>
+      <div class="category">
+        <img src="img3.jpeg" alt="Live Events">
+        <h3>Live Events</h3>
+        <p>Discover India's best events & concerts</p>
+
+      </div>
+    </div>
+
+    <!-- Collections -->
+    <div class="collections">
+      <h2>Collections</h2>
+      <span class="collection-span">
+        <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Mumbai, based on trends</p>
+        <a href="#" class="all-collections-link">All collections in Mumbai <i class="fa-solid fa-caret-right"
+            style="margin-left: 12px"></i></a>
+
+      </span>
+
+      <div class="collection-cards">
+        <div class="collection-card">
+          <img src="img4.jpeg" alt="Newly Opened Places">
+          <div class="card-info">
+            <h4>Newly Opened Places</h4>
+            <p>22 Places</p>
+          </div>
+        </div>
+        <div class="collection-card">
+          <img src="img5.jpeg" alt="Top Trending Spots">
+          <div class="card-info">
+            <h4>Top Trending Spots</h4>
+            <p>22 Places</p>
+          </div>
+        </div>
+        <div class="collection-card">
+          <img src="img4.jpeg" alt="Best Insta-worthy Places">
+          <div class="card-info">
+            <h4>Best Insta-worthy Places</h4>
+            <p>28 Places</p>
+          </div>
+        </div>
+        <div class="collection-card">
+          <img src="img7.jpeg" alt="Best Rooftop Places">
+          <div class="card-info">
+            <h4>Best Rooftop Places</h4>
+            <p>32 Places</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- locations -->
+
+    <div class="container">
+      <div class="title">Popular localities in and around <b>Mumbai</b></div>
+      <div class="grid">
+        <div class="card one-line">
+          <span>
+            <div class="card-title">Lower Parel</div>
+            <div class="card-subtitle">486 places</div>
+          </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="card one-line">
+          <span>
+            <div class="card-title">Powai</div>
+            <div class="card-subtitle">439 places</div>
+          </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="card one-line">
+          <span>
+            <div class="card-title">Malad West</div>
+            <div class="card-subtitle">951 places</div>
+          </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="card one-line">
+          <span>
+            <div class="card-title">Borivali West</div>
+            <div class="card-subtitle">679 places</div>
+          </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="card one-line">
+          <span>
+            <div class="card-title">Bandra Kurla Complex</div>
+            <div class="card-subtitle">156 places</div>
+          </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="card one-line">
+          <span>
+            <div class="card-title">Vashi</div>
+            <div class="card-subtitle">662 places</div>
+          </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="card one-line">
+          <span>
+            <div class="card-title">Fort</div>
+            <div class="card-subtitle">285 places</div>
+          </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="card one-line">
+          <span>
+            <div class="card-title">Juhu</div>
+            <div class="card-subtitle">246 places</div>
+          </span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="card center" >
+          <div style="font-size: 20px; color: #1C1C1C; font-family: sans-serif; margin-right: 10px;">see more</div>
+          <i class="fa-solid fa-angle-down"></i>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-sec">
+    <!-- Left: Images of phones -->
+   
+      <img class="image-section" src="mobile.avif" alt="Zomato App Phones" />
+
+
+    <!-- Right: Content Section -->
+    <div class="content-sec">
+      <h1>Get the Zomato app</h1>
+      <p>We will send you a link, open it on your phone to download the app</p>
+      <form class="form">
+        <label>
+          <input type="radio" onchange="typeChanged('email')" name="contact-method" checked> Email
+        </label>
+        <label>
+          <input type="radio" onchange="typeChanged('phone')" name="contact-method"> Phone
+        </label>
+        <br><br>
+        <div class="inline-elem">
+          <div id="emailDiv">
+            <input class="input-field" type="email" placeholder="Email" id="mail" />
+          </div>
+          <div id="phoneDiv" style="display: none;">
+            <input class="input-field" type="number" placeholder="Phone Number" id="digits">
+          </div>
+
+          <button class="btn" type="submit">Share App Link</button>
+        </div>
+      </form>
+      <div class="download-links">
+        <img src="google play2.png" style="width: 140px; height: 100px;object-fit: contain;"
+          alt="Get it on Google Play">
+        <img src="app store.png" style="width: 140px;object-fit: contain;" alt="Download on the App Store">
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function typeChanged(type) {
+      if (type == 'email') {
+        document.getElementById("emailDiv").style.display = "block";
+        document.getElementById("phoneDiv").style.display = "none"
+
+      } else {
+        document.getElementById("emailDiv").style.display = "none";
+        document.getElementById("phoneDiv").style.display = "block"
+      }
+
+    }
+
+  </script>
+
+  <!-- Faq-container is start from below -->
+
+  <div class="faq-container">
+    <h1>Explore options near me</h1>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Popular Cuisines Near Me
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Bakery near meBeverages near meBiryani near meBurger near meChinese near meDesserts near meIce Cream near
+            meKebab near meMaharashtrian near meMomos near meMughlai near meNorth Indian near mePizza near meRolls near
+            meSandwich near meSeafood near meShake near meSichuan near meSouth Indian near meStreet near me</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Popular Restaurant Types Near me
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Bakeries near meBars near meBeverage Shops near meBhojanalya near meCafés near meCasual Dining near meClubs
+            near meCocktail Bars near meConfectioneries near meDessert Parlors near meDhabas near meFine Dining near
+            meFood Courts near meFood Trucks near meIrani Cafes near meKiosks near meLounges near meMicrobreweries near
+            mePaan Shop near mePubs near meQuick Bites near meShacks near meSweet Shops near me
+          </p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Top Restaurant Chains
+
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="accordion-content">
+          <p>BikanervalaBiryani BluesBurger KingDomino'sDunkin' DonutsKFCKrispy KremeMcDonald'sPizza HutWOW! Momo</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" onclick="toggleAccordion(this)">
+          Cities We Deliver To
+          <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Delhi
+            NCRKolkataMumbaiBengaluruPuneHyderabadChennaiLucknowKochiJaipurAhmedabadChandigarhGoaIndoreGangtokNashikOotyShimlaLudhianaGuwahatiAmritsarKanpurAllahabadAurangabadBhopalRanchiVisakhapatnamBhubaneswarCoimbatoreMangaloreVadodaraNagpurAgraDehradunMysorePuducherrySuratVaranasiPatnaUdaipurSrinagarKhajurahoNeemranaCuttackTrivandrumHaridwarLehPushkarRajkotMaduraiKozhikodeAlappuzhaThrissurManipalVijayawadaJodhpurKotaAjmerMussoorieRishikeshJalandharJammuManaliAll
+            delivery cities
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script>
+    function toggleAccordion(button) {
+      const item = button.parentElement;
+      const content = item.querySelector('.accordion-content');
+
+      // Toggle active class
+      item.classList.toggle('active');
+
+      // Adjust max-height
+      if (item.classList.contains('active')) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+      } else {
+        content.style.maxHeight = '0';
+      }
+    }
+  </script>
+
+  <!-- footer starts from below -->
+
+  <footer class="footer">
+    <div class="zomatoTitle">
+      <div class="logo">
+        <h1>zomato</h1>
+      </div>
+      <div class="options">
+        <div class="dropdown-sec">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png"
+            alt="India Flag">
+          <span>India</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="dropdown-sec">
+          <span>🌐</span>
+          <span>English</span>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>ABOUT ZOMATO</h4>
+        <ul>
+          <li><a href="#">Who We Are</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Work With Us</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Report Fraud</a></li>
+          <li><a href="#">Press Kit</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>ZOMAVERSE</h4>
+        <ul>
+          <li><a href="#">Zomato</a></li>
+          <li><a href="#">Blinkit</a></li>
+          <li><a href="#">District</a></li>
+          <li><a href="#">Feeding India</a></li>
+          <li><a href="#">Hyperpure</a></li>
+          <li><a href="#">Zomato Live</a></li>
+          <li><a href="#">Zomaland</a></li>
+          <li><a href="#">Weather Union</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>FOR RESTAURANTS</h4>
+        <ul>
+          <li><a href="#">Partner With Us</a></li>
+          <li><a href="#">Apps For You</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>LEARN MORE</h4>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Terms</a></li>
+        </ul>
+      </div>
+      <div class="footer-section social-links">
+        <h4>SOCIAL LINKS</h4>
+        <div class="icons">
+          <a href="#"><img src="li.png" alt="LinkedIn"></a>
+          <a href="#"><img src="insta.png" alt="Instagram"></a>
+          <a href="#"><img src="yt.png" alt="YouTube"></a>
+          <a href="#"><img src="x.png" alt="Twitter"></a>
+          <a href="#"><img src="fb.png" alt="Facebook"></a>
+        </div>
+        <br>
+        <div class="app-links">
+          <a href="#"><img src="app store.png" alt="App Store"></a>
+          <br>
+          <br>
+          <a href="#"><img src="google play2.png" alt="Google Play"></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>By continuing past this page, you agree to our <a href="#">Terms of Service</a>, <a href="#">Cookie Policy</a>,
+          <a href="#">Privacy Policy</a>, and <a href="#">Content Policies</a>. All trademarks are properties of their
+          respective owners. 2008-2024 &copy; Zomato™ Ltd. All rights reserved.
+        </p>
+      </div>
+    </div>
+   
+  </footer>
+
+
+</body>
+
+</html>

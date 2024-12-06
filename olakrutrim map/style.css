@@ -1,0 +1,845 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    background: linear-gradient(90deg, #d4f8d4, #b2f2b2);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.banner-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: #212121;
+}
+
+.banner-button {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 40px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.banner-button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* NAVBAR CSS FROM BELOW */
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    background-color: white;
+}
+
+.logo span {
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo {
+    font-size: 2.3rem;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+.nav-links a.active {
+    color: #00d68f;
+}
+
+.developer-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.developer-dropdown::after {
+    content: "▼";
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+.sign-in-btn {
+    background-color: #1F2632;
+    font-size: 16px;
+    color: white;
+    padding: 10px 23px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    /* margin-left: 600px; */
+    cursor: pointer;
+}
+
+.sign-in-btn:hover {
+    background-color: #2d3456;
+}
+
+/* HERO SECTION START FROM BELOW */
+
+
+
+.hero-section {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-align: center;
+    padding: 4rem 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 60px;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 22px;
+    color: #1F2632;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+    border: none;
+    font-size: 22px;
+    background-color: #1C964D;
+    padding: 16px 40px;
+}
+
+.btn-primary:hover {
+    background-color: #00bf80;
+}
+
+.btn-secondary {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 2px solid #1a1f36;
+    font-size: 22px;
+    padding: 16px 40px;
+}
+
+.btn-secondary:hover {
+    background-color: #f3f4f6;
+}
+
+/* IMAGE SEC START FROM BELOW */
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CONTAINER SEC START FROM BELOW  */
+
+.container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    max-width: 100%;
+    /* margin-left: 340px; */
+    padding: 8rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* display: grid;
+    justify-content: end; */
+}
+
+.stats-grid {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 6rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 3.5rem;
+    color: #1a1f36;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: #64748B;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stat-icon {
+    width: 16px;
+    height: 16px;
+    opacity: 0.6;
+}
+
+.ecosystem-content {
+    text-align: center;
+    max-width: 50%;
+}
+
+.ecosystem-title {
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.ecosystem-description {
+    font-size: 32px;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 4.5rem;
+    text-align: center;
+}
+
+.view-offerings-btn:hover {
+    background-color: #00bf80;
+}
+
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ANOTHER CONTAINER START FROM BELOW */
+
+.anotherContainer {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+}
+
+.sdk-header {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+}
+
+.sdk-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a1f36;
+    margin-bottom: 1rem;
+}
+
+.sdk-description {
+    font-size: 22px;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.feature-card {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.feature-title {
+    font-size: 36px;
+    color: #0F172A;
+    margin-bottom: 1rem;
+}
+
+.feature-description {
+    color: #1F2632;
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.feature-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sdk-title {
+        font-size: 2rem;
+    }
+
+    .feature-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* PRICING SECTION START FROM BELOW  */
+
+.pricing-section {
+    background-color: #f8f9fa;
+    padding: 5rem 2rem;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.pricing-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pricing-title {
+    font-size: 60px;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.pricing-description {
+    font-size: 26px;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    max-width: 800px;
+}
+
+.pricing-highlight {
+    color: #1a1f36;
+}
+
+.pricing-secondary {
+    color: #6b7280;
+}
+
+@media (max-width: 768px) {
+    .pricing-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .pricing-title {
+        font-size: 2.5rem;
+    }
+
+    .pricing-description {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-title {
+        font-size: 2rem;
+    }
+
+    .pricing-description {
+        font-size: 1rem;
+    }
+}
+
+/* QUESTIONS SECTION IS START FROM BELOW */
+
+.faq-container {
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: start;
+    font-size: 48px;
+    color: #18181B;
+    margin: 0px 0px 24px;
+}
+
+p {
+    text-align: start;
+    font-size: 16px;
+    color: #70767E;
+    margin: 0px 0px 24px;
+}
+
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    padding: 2px 2px;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    width: 100%;
+    background-color: #f5f5f5;
+    color: #444;
+    /* text-align: left; */
+    padding: 30px 36px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion-header:hover {
+    background-color: #eaeaea;
+}
+
+.accordion-content {
+    font-size: 16px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px 15px;
+    background-color: #fff;
+    transition: max-height 0.3s ease;
+    color: #64748B;
+}
+
+.accordion-content p {
+    margin: 15px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 200px;
+    padding: 15px;
+}
+
+/* FOOTER SEC START FROM BELOW */
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #121a16;
+    padding: 20px 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-content {
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo .logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-links,
+.footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-links a,
+.footer-socials a {
+    text-decoration: none;
+    color: #b8d1be;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-socials a:hover {
+    color: #ffffff;
+}
+
+.footer-links a::after,
+.footer-socials a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    /* background-color: #b8d1be; */
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after,
+.footer-socials a:hover::after {
+    width: 100%;
+}
+
+.footer-bottom {
+    border-top: 2px solid #2e3c35;
+    padding-top: 10px;
+}
+
+
+.footer-bottom p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+
+    padding-top: 10px;
+}
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    /* Start off-screen */
+    height: 100%;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    z-index: 1000;
+}
+
+.side-nav a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.side-nav a:hover {
+    color: #000;
+}
+
+.side-nav .sign-in-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.side-nav .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Active Side Navigation */
+.side-nav.active {
+    left: 0;
+    /* Slide in from the left */
+}
+
+/* Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+/* MEDIA QUERRY */
+
+@media (max-width: 768px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    .banner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-text {
+        /* width: fit-content; */
+        text-align: center;
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+
+    .banner-button {
+        font-size: 0.5rem;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .logo {
+        padding: 10px;
+        font-size: 1.8rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .hero-title {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero-description {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 0.6rem;
+    }
+
+    .stats-grid {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 3rem 1rem;
+    }
+
+    .stat-label span {
+        font-size: 2rem;
+    }
+
+    .ecosystem-title {
+        font-size: 1.5rem;
+    }
+
+    .ecosystem-content {
+        max-width: 100%;
+    }
+
+    .ecosystem-description {
+        font-size: 0.8rem;
+    }
+
+    .sdk-header {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .sdk-description {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .feature-title {
+        text-align: center;
+    }
+
+    .feature-description {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .pricing-container {
+        text-align: center;
+    }
+
+    .pricing-title {
+        font-size: 1.5rem;
+        text-align: start;
+    }
+
+    .pricing-description {
+        font-size: 0.8rem;
+    }
+
+    .faq-container h1 {
+        font-size: 1.5rem;
+        text-align: start;
+    }
+
+    .faq-container p {
+        text-align: start;
+        font-size: 0.8rem;
+    }
+
+    .faq-container {
+        margin: 0;
+    }
+
+    .accordion-item {
+        border: none;
+    }
+
+    .accordion-header {
+        text-align: center;
+        font-size: 15px;
+    }
+
+
+
+    .footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: auto;
+    }
+
+    .footer-logo {
+        margin-bottom: 15px;
+    }
+
+    .footer-logo .logo-text {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .footer-socials {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer-socials a img {
+        width: 25px;
+        padding: 3px;
+        border-radius: 2px;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+
+
+
+
+
+
+
+
+}
